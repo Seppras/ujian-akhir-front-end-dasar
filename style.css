@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Inter, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #bfecff;
+  padding: 13px;
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem 2.8rem;
+}
+
+main .content {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+main .content .AddBook,
+main .content .menubook {
+  border: 2px solid black;
+  padding: 1.5rem;
+}
+
+main .content .AddBook {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+
+main .content .AddBook h2 {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+main .content .AddBook form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+  align-items: center;
+}
+
+main .content .AddBook form div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+main .content .AddBook form label {
+  flex: 1;
+  text-align: left;
+}
+
+main .content .AddBook form input[type="text"],
+main .content .AddBook form input[type="number"] {
+  flex: 2;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+main .content .AddBook form input[type="checkbox"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+main .content .AddBook button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  color: white;
+  background-color: #0080ff;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+main .content .menubook {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+
+main .content .menubook section {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+main .content .menubook h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+main .content .donebook {
+  display: flex;
+  gap: 1rem;
+}
+
+main .content .donebook div[data-testid="bookItem"] {
+  border: 1px solid black;
+  padding: 1rem;
+  width: 200px;
+  text-align: left;
+}
+
+main .content .donebook button {
+  width: 45%;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
